@@ -1,0 +1,20 @@
+[remap]
+
+importer="distancefield"
+type="ImageTexture"
+path="res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res"
+
+[deps]
+
+files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res" ]
+
+source_file="res://icon_white.svg"
+dest_files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res", "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res" ]
+
+[params]
+
+size=Vector2( 256, 256 )
+scale=Vector2( 1, 1 )
+translate=Vector2( 0, 0 )
+range=1.0
+auto_frame=true
