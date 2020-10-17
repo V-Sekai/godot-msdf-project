@@ -1,15 +1,48 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://msdf.tres" type="Shader" id=1]
 [ext_resource path="res://icon_white_msdf.png" type="Texture" id=2]
+[ext_resource path="res://a_msdf.png" type="Texture" id=3]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
-shader_param/PixelRangePlus4 = -2.0
+shader_param/PixelRangePlus4 = -3.729
+
+[sub_resource type="Shader" id=2]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+void fragment() {
+	COLOR = vec4(texture(TEXTURE, UV).rgb, 1.0);
+}"
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 1 )
+shader_param/PixelRangePlus4 = 0.0
 
 [node name="Spatial" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 material = SubResource( 1 )
+position = Vector2( 0, -0.168182 )
 texture = ExtResource( 2 )
 offset = Vector2( 128, 128 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+material = SubResource( 3 )
+position = Vector2( 398.751, 130.242 )
+texture = ExtResource( 2 )
+
+[node name="a_msdf" type="Sprite" parent="."]
+position = Vector2( 114.55, 353.635 )
+scale = Vector2( 6.87562, 6.73404 )
+texture = ExtResource( 3 )
+
+[node name="a_msdf2" type="Sprite" parent="."]
+material = SubResource( 4 )
+position = Vector2( 252.788, 356.124 )
+scale = Vector2( 6.87562, 6.73404 )
+texture = ExtResource( 3 )
