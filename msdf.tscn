@@ -5,6 +5,7 @@
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
+shader_param/PixelRangePlus4 = -2.0
 
 [node name="Spatial" type="Node2D"]
 
