@@ -1,14 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://msdf.tres" type="Shader" id=1]
-[ext_resource path="res://icon_white_msdf.png" type="Texture" id=2]
+[ext_resource path="res://icon_white.svg" type="Texture" id=2]
 [ext_resource path="res://a_msdf.png" type="Texture" id=3]
+[ext_resource path="res://output.png" type="Texture" id=4]
 
-[sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 1 )
-shader_param/PixelRangePlus4 = -3.729
-
-[sub_resource type="Shader" id=2]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 render_mode blend_mix;
 
@@ -16,8 +13,12 @@ void fragment() {
 	COLOR = vec4(texture(TEXTURE, UV).rgb, 1.0);
 }"
 
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+
 [sub_resource type="ShaderMaterial" id=3]
-shader = SubResource( 2 )
+shader = ExtResource( 1 )
+shader_param/PixelRangePlus4 = 0.0
 
 [sub_resource type="ShaderMaterial" id=4]
 shader = ExtResource( 1 )
@@ -25,16 +26,27 @@ shader_param/PixelRangePlus4 = 0.0
 
 [node name="Spatial" type="Node2D"]
 
-[node name="Sprite" type="Sprite" parent="."]
-material = SubResource( 1 )
-position = Vector2( 0, -0.168182 )
-texture = ExtResource( 2 )
-offset = Vector2( 128, 128 )
-
 [node name="Sprite2" type="Sprite" parent="."]
-material = SubResource( 3 )
-position = Vector2( 398.751, 130.242 )
+material = SubResource( 2 )
+position = Vector2( 124.391, 152.181 )
+scale = Vector2( 1.57356, 1.57356 )
 texture = ExtResource( 2 )
+offset = Vector2( -6.45493, 0 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+material = SubResource( 2 )
+position = Vector2( -57.8364, 158.803 )
+scale = Vector2( 1.57356, 1.57356 )
+texture = ExtResource( 4 )
+offset = Vector2( -6.45493, 0 )
+
+[node name="Sprite" type="Sprite" parent="."]
+material = SubResource( 3 )
+position = Vector2( 28.8308, -152.242 )
+scale = Vector2( 1.61528, 1.61528 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( 128, 128 )
 
 [node name="a_msdf" type="Sprite" parent="."]
 position = Vector2( 114.55, 353.635 )

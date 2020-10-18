@@ -1,34 +1,20 @@
 [remap]
 
-importer="texture"
-type="StreamTexture"
-path="res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.stex"
-metadata={
-"vram_texture": false
-}
+importer="distancefield"
+type="ImageTexture"
+path="res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res"
 
 [deps]
 
+files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res" ]
+
 source_file="res://icon_white.svg"
-dest_files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.stex" ]
+dest_files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res", "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res" ]
 
 [params]
 
-compress/mode=0
-compress/lossy_quality=0.7
-compress/hdr_mode=0
-compress/bptc_ldr=0
-compress/normal_map=0
-flags/repeat=0
-flags/filter=true
-flags/mipmaps=false
-flags/anisotropic=false
-flags/srgb=2
-process/fix_alpha_border=true
-process/premult_alpha=false
-process/HDR_as_SRGB=false
-process/invert_color=false
-stream=false
-size_limit=0
-detect_3d=true
-svg/scale=1.0
+size=Vector2( 128, 128 )
+scale=Vector2( 1, 1 )
+translate=Vector2( 0, 0 )
+range=1.0
+auto_frame=true
