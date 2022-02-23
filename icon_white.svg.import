@@ -1,20 +1,35 @@
 [remap]
 
-importer="distancefield"
-type="ImageTexture"
-path="res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res"
+importer="texture"
+type="StreamTexture2D"
+uid="uid://dty81m4aywh3f"
+path="res://.godot/imported/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res" ]
-
 source_file="res://icon_white.svg"
-dest_files=[ "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res", "res://.import/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.res" ]
+dest_files=["res://.godot/imported/icon_white.svg-e668d12278afa3ccfa9c78a1d17716d8.stex"]
 
 [params]
 
-size=Vector2( 128, 128 )
-scale=Vector2( 1, 1 )
-translate=Vector2( 0, 0 )
-range=1.0
-auto_frame=true
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/bptc_ldr=0
+compress/normal_map=0
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/size_limit=0
+detect_3d/compress_to=1
+svg/scale=1.0

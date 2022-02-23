@@ -1,60 +1,52 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://b10d45oyoqftd"]
 
-[ext_resource path="res://msdf.tres" type="Shader" id=1]
-[ext_resource path="res://icon_white.svg" type="Texture" id=2]
-[ext_resource path="res://a_msdf.png" type="Texture" id=3]
-[ext_resource path="res://output.png" type="Texture" id=4]
+[ext_resource type="Shader" uid="uid://dbdbe2h10btxu" path="res://msdf.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://dty81m4aywh3f" path="res://icon_white.svg" id="2"]
+[ext_resource type="Texture2D" uid="uid://2v2p5mcxb26s" path="res://a_msdf.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dcrg0gp440ata" path="res://output.png" id="4"]
 
-[sub_resource type="Shader" id=1]
-code = "shader_type canvas_item;
-render_mode blend_mix;
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource( "1" )
+shader_param/PixelRangePlus4 = null
 
-void fragment() {
-	COLOR = vec4(texture(TEXTURE, UV).rgb, 1.0);
-}"
-
-[sub_resource type="ShaderMaterial" id=2]
-shader = SubResource( 1 )
-
-[sub_resource type="ShaderMaterial" id=3]
-shader = ExtResource( 1 )
+[sub_resource type="ShaderMaterial" id="3"]
+shader = ExtResource( "1" )
 shader_param/PixelRangePlus4 = 0.0
 
-[sub_resource type="ShaderMaterial" id=4]
-shader = ExtResource( 1 )
+[sub_resource type="ShaderMaterial" id="4"]
+shader = ExtResource( "1" )
 shader_param/PixelRangePlus4 = 0.0
 
 [node name="Spatial" type="Node2D"]
 
-[node name="Sprite2" type="Sprite" parent="."]
-material = SubResource( 2 )
-position = Vector2( 124.391, 152.181 )
-scale = Vector2( 1.57356, 1.57356 )
-texture = ExtResource( 2 )
-offset = Vector2( -6.45493, 0 )
+[node name="Sprite2" type="Sprite2D" parent="."]
+material = SubResource( "2" )
+position = Vector2(488.455, 462)
+texture = ExtResource( "2" )
+offset = Vector2(-6.45493, 0)
 
-[node name="Sprite3" type="Sprite" parent="."]
-material = SubResource( 2 )
-position = Vector2( -57.8364, 158.803 )
-scale = Vector2( 1.57356, 1.57356 )
-texture = ExtResource( 4 )
-offset = Vector2( -6.45493, 0 )
+[node name="Sprite3" type="Sprite2D" parent="."]
+material = SubResource( "2" )
+position = Vector2(528, 1103.71)
+scale = Vector2(1.57356, 1.57356)
+texture = ExtResource( "4" )
+offset = Vector2(-6.45493, 0)
 
-[node name="Sprite" type="Sprite" parent="."]
-material = SubResource( 3 )
-position = Vector2( 28.8308, -152.242 )
-scale = Vector2( 1.61528, 1.61528 )
-texture = ExtResource( 2 )
+[node name="Sprite" type="Sprite2D" parent="."]
+material = SubResource( "3" )
+position = Vector2(887.455, -183)
+texture = ExtResource( "2" )
 centered = false
-offset = Vector2( 128, 128 )
+offset = Vector2(128, 128)
 
-[node name="a_msdf" type="Sprite" parent="."]
-position = Vector2( 114.55, 353.635 )
-scale = Vector2( 6.87562, 6.73404 )
-texture = ExtResource( 3 )
+[node name="a_msdf" type="Sprite2D" parent="."]
+material = SubResource( "3" )
+position = Vector2(158.005, 1107.58)
+scale = Vector2(6.87562, 6.73404)
+texture = ExtResource( "3" )
 
-[node name="a_msdf2" type="Sprite" parent="."]
-material = SubResource( 4 )
-position = Vector2( 252.788, 356.124 )
-scale = Vector2( 6.87562, 6.73404 )
-texture = ExtResource( 3 )
+[node name="a_msdf2" type="Sprite2D" parent="."]
+material = SubResource( "4" )
+position = Vector2(296.243, 1110.07)
+scale = Vector2(6.87562, 6.73404)
+texture = ExtResource( "3" )
