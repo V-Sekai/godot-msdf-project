@@ -1,4 +1,4 @@
-[gd_resource type="VisualShader" load_steps=31 format=3 uid="uid://dbdbe2h10btxu"]
+[gd_resource type="VisualShader" load_steps=30 format=3 uid="uid://dbdbe2h10btxu"]
 
 [sub_resource type="VisualShaderNodeFloatConstant" id="1"]
 constant = 0.5
@@ -45,9 +45,6 @@ default_input_values = [0, 0.0, 1, 0.5]
 [sub_resource type="VisualShaderNodeFloatFunc" id="13"]
 output_port_for_preview = 0
 function = 18
-
-[sub_resource type="VisualShaderNodeInput" id="14"]
-input_name = "color"
 
 [sub_resource type="VisualShaderNodeTexture" id="15"]
 source = 5
@@ -229,7 +226,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-319.301, 39.3878)
+graph_offset = Vector2(-305.911, -68.0795)
 mode = 1
 flags/light_only = false
 nodes/vertex/2/node = SubResource( "28" )
@@ -258,39 +255,37 @@ nodes/fragment/10/position = Vector2(-960, 1680)
 nodes/fragment/11/node = SubResource( "2" )
 nodes/fragment/11/position = Vector2(2360, 1760)
 nodes/fragment/12/node = SubResource( "3" )
-nodes/fragment/12/position = Vector2(1020, 3680)
+nodes/fragment/12/position = Vector2(1020, 2360)
 nodes/fragment/13/node = SubResource( "4" )
-nodes/fragment/13/position = Vector2(1500, 3620)
+nodes/fragment/13/position = Vector2(1500, 2320)
 nodes/fragment/14/node = SubResource( "5" )
-nodes/fragment/14/position = Vector2(600, 3680)
+nodes/fragment/14/position = Vector2(600, 2360)
 nodes/fragment/15/node = SubResource( "6" )
-nodes/fragment/15/position = Vector2(600, 3120)
+nodes/fragment/15/position = Vector2(600, 2920)
 nodes/fragment/16/node = SubResource( "7" )
-nodes/fragment/16/position = Vector2(120, 3120)
+nodes/fragment/16/position = Vector2(120, 2360)
 nodes/fragment/18/node = SubResource( "9" )
-nodes/fragment/18/position = Vector2(2360, 3620)
+nodes/fragment/18/position = Vector2(2360, 2320)
 nodes/fragment/19/node = SubResource( "10" )
 nodes/fragment/19/position = Vector2(2780, 1720)
 nodes/fragment/20/node = SubResource( "12" )
 nodes/fragment/20/position = Vector2(3180, 1720)
 nodes/fragment/21/node = SubResource( "13" )
 nodes/fragment/21/position = Vector2(3600, 1760)
-nodes/fragment/24/node = SubResource( "14" )
-nodes/fragment/24/position = Vector2(-960, 2620)
 nodes/fragment/25/node = SubResource( "15" )
-nodes/fragment/25/position = Vector2(-320, 2240)
+nodes/fragment/25/position = Vector2(-320, 2360)
 nodes/fragment/26/node = SubResource( "16" )
-nodes/fragment/26/position = Vector2(-960, 2380)
+nodes/fragment/26/position = Vector2(-960, 2520)
 nodes/fragment/27/node = SubResource( "17" )
 nodes/fragment/27/position = Vector2(1020, 1820)
 nodes/fragment/28/node = SubResource( "18" )
 nodes/fragment/28/position = Vector2(1500, 1820)
 nodes/fragment/29/node = SubResource( "19" )
-nodes/fragment/29/position = Vector2(-960, 2840)
+nodes/fragment/29/position = Vector2(-960, 2860)
 nodes/fragment/31/node = SubResource( "20" )
 nodes/fragment/31/position = Vector2(-320, 2800)
 nodes/fragment/32/node = SubResource( "21" )
-nodes/fragment/32/position = Vector2(1960, 3620)
+nodes/fragment/32/position = Vector2(1960, 2320)
 nodes/fragment/34/node = SubResource( "VisualShaderNodeColorUniform_bvmpo" )
 nodes/fragment/34/position = Vector2(-960, 1160)
 nodes/fragment/connections = PackedInt32Array(7, 0, 6, 0, 10, 0, 9, 0, 6, 0, 9, 1, 16, 0, 14, 0, 16, 1, 14, 1, 16, 2, 12, 1, 14, 0, 12, 0, 16, 0, 15, 0, 16, 1, 15, 1, 12, 0, 13, 1, 15, 0, 13, 0, 18, 0, 19, 0, 11, 0, 19, 1, 19, 0, 20, 0, 20, 0, 21, 0, 2, 0, 4, 1, 5, 0, 11, 0, 8, 0, 7, 0, 25, 0, 16, 0, 26, 0, 25, 2, 4, 0, 5, 0, 27, 0, 28, 0, 27, 1, 28, 1, 9, 0, 27, 0, 28, 0, 5, 1, 31, 0, 4, 0, 13, 0, 32, 0, 25, 1, 32, 1, 32, 0, 18, 0, 21, 0, 0, 1, 29, 0, 31, 0, 34, 0, 0, 0)
