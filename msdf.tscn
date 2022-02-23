@@ -29,6 +29,11 @@ scale = Vector2(4, 4)
 texture = ExtResource( "2_cqnk1" )
 offset = Vector2(-6.45493, 0)
 
+[node name="Sprite2" type="Sprite2D" parent="Sprite2"]
+position = Vector2(-142, 0)
+texture = ExtResource( "2_cqnk1" )
+offset = Vector2(-6.45493, 0)
+
 [node name="Sprite" type="Sprite2D" parent="."]
 material = SubResource( "3" )
 position = Vector2(544, -120)

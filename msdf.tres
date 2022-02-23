@@ -226,6 +226,7 @@ void fragment() {
 
 }
 "
+graph_offset = Vector2(-329.542, 141.233)
 mode = 1
 flags/light_only = false
 nodes/vertex/2/node = SubResource( "28" )
