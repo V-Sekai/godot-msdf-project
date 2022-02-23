@@ -2,16 +2,16 @@
 
 importer="texture"
 type="StreamTexture2D"
-uid="uid://dcrg0gp440ata"
-path="res://.godot/imported/output.png-bca5b591603c5baa9613904d36dced7f.stex"
+uid="uid://xa4fqsg7335a"
+path="res://.godot/imported/icon_white_msdf.png-eff4478915326d8815cdb5bedbf4d860.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://output.png"
-dest_files=["res://.godot/imported/output.png-bca5b591603c5baa9613904d36dced7f.stex"]
+source_file="res://icon_white_msdf.png"
+dest_files=["res://.godot/imported/icon_white_msdf.png-eff4478915326d8815cdb5bedbf4d860.stex"]
 
 [params]
 
