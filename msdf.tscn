@@ -1,20 +1,22 @@
-[gd_scene load_steps=8 format=3 uid="uid://b10d45oyoqftd"]
+[gd_scene load_steps=7 format=3 uid="uid://b10d45oyoqftd"]
 
 [ext_resource type="Shader" uid="uid://dbdbe2h10btxu" path="res://msdf.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://dty81m4aywh3f" path="res://icon_white.svg" id="2"]
 [ext_resource type="Texture2D" uid="uid://2v2p5mcxb26s" path="res://a_msdf.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://dcrg0gp440ata" path="res://output.png" id="4"]
 
 [sub_resource type="ShaderMaterial" id="2"]
 shader = ExtResource( "1" )
+shader_param/ColorUniform = null
 shader_param/PixelRangePlus4 = null
 
 [sub_resource type="ShaderMaterial" id="3"]
 shader = ExtResource( "1" )
+shader_param/ColorUniform = null
 shader_param/PixelRangePlus4 = 0.0
 
 [sub_resource type="ShaderMaterial" id="4"]
 shader = ExtResource( "1" )
+shader_param/ColorUniform = null
 shader_param/PixelRangePlus4 = 0.0
 
 [node name="Spatial" type="Node2D"]
@@ -23,13 +25,6 @@ shader_param/PixelRangePlus4 = 0.0
 material = SubResource( "2" )
 position = Vector2(488.455, 462)
 texture = ExtResource( "2" )
-offset = Vector2(-6.45493, 0)
-
-[node name="Sprite3" type="Sprite2D" parent="."]
-material = SubResource( "2" )
-position = Vector2(528, 1103.71)
-scale = Vector2(1.57356, 1.57356)
-texture = ExtResource( "4" )
 offset = Vector2(-6.45493, 0)
 
 [node name="Sprite" type="Sprite2D" parent="."]
